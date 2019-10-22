@@ -9,12 +9,15 @@
   <title>FTD - Educação</title>
 </head>
 <body>
+  <div class="cointainer">
   <header>
-    <img src="/contents/img/ftd_400x400.png" alt="FTD - Educação">
-    <h1>FTD - Educação</h1>    
-    <input type="search" name="busca" id="busca" placeholder="Digite um título" class="icon-search">
+    <h1 class="logo"><img src="/contents/img/ftd_200x140.png" alt="FTD - Educação"></h1>    
+    <form action="" method="get">
+      <span class="icon-search"><input type="search" name="busca" id="busca" placeholder="Digite um título"></span>
+      <button type="submit">Buscar</button>
+    </form>  
   </header>
-  <nav>
+  <nav class="menu">
     <ul>
       <li><a href="filtro">Didáticos</a></li>
       <li><a href="https://ftd.com.br/apoio-didatico/?category=2">Apoio didático</a></li>
@@ -26,13 +29,16 @@
       <li><a href="https://ftd.com.br/educadores/">Educador</a></li>      
     </ul>
   </nav>
-  <section>
+  <section class="livros">    
     <img src="/contents/img/banner_lancamentos_didaticos.png" alt="Lançamentos de livros didáticos">
     <main>      
-      <a href="/pages/livro.html">L</a>
-      <h2>Livros novos</h2>
-      <img src="" alt="">
-      <p>titulo</p>
+      <div id="livrosNovos">
+        <a href="/pages/livro.html">
+        <h2>Livros novos</h2>
+        <img src="" alt="" id="capa">
+        <p id="titulo"></p>
+        </a>
+      </div>
     </main>
     <aside>
       <h3>Livros mais acessados</h3>
@@ -40,20 +46,17 @@
       <p>titulo</p>
     </aside>
   </section>
-  <section>
-    <article>
+  <section class="conteudo">
       <div>
-      <p>Noticias</p>
+        <p>Noticias</p>
       </div>
       <div>
-      <p>Eventos</p>
+        <p>Eventos</p>
       </div>
-    </article>
   </section>
-  <footer>
-    <div>
-      <p>Sobre</p>
-      <nav>
+  <footer>    
+      <nav class="empresa">
+        <p>Sobre a Empresa</p>
         <ul>
           <li><a href="https://ftd.com.br/a-ftd/">FTD Educação</a></li>
           <li><a href="https://ftd.com.br/missao-visao-e-valores">Missão, Visão e Valores</a></li>
@@ -63,28 +66,28 @@
           <li><a href="http://www.ftdgrafica.com.br/">Grafica</a></li>
         </ul>
       </nav>
-    </div>
-    <div>
-      <p>Produtos</p>
-      <ul>
-        <li><a href="filtro">Diáticos</a></li>
-        <li><a href="filtro">Apoio didatico</a></li>
-        <li><a href="filtro">Literatura</a></li>
-        <li><a href="https://ftd.com.br/livro-acessivel/">Livros acessíveis</a></li>
-      </ul>
-    </div>
-    <div>
-      <p>Relacionamento</p>
-      <ul>
-        <li><a href="https://www.ftd.com.br/atendimento/fale-conosco/?_ga=2.144478581.1110973652.1570694577-1956661467.1570694577">Fale conosco</a></li>
-        <li>E-mail: central.relacionamento@ftd.com.br</li>
-        <li>Tel: 0800 772 2300</li>
-        <li><a href="https://www.conformidade.com.br/canaldiretoMarista">Compliance</a></li>
-        <li><a href="https://ftd.com.br/imprensa/apresentacao">Imprensa</a></li>
-        <li><a href="https://jobs.kenoby.com/vempraftd">Trabalhe na FTD</a></li>
+      <nav class="Livos">
+        <p>Livros</p>
+        <ul>
+          <li><a href="filtro">Diáticos</a></li>
+          <li><a href="filtro">Apoio didatico</a></li>
+          <li><a href="filtro">Literatura</a></li>
+          <li><a href="https://ftd.com.br/livro-acessivel/">Livros acessíveis</a></li>
+        </ul>
+      </nav>
+      <nav class="relacionamento">    
+        <p>Relacionamento</p>
+        <ul>
+          <li><a href="https://www.ftd.com.br/atendimento/fale-conosco/?_ga=2.144478581.1110973652.1570694577-1956661467.1570694577">Fale conosco</a></li>
+          <li>E-mail: central.relacionamento@ftd.com.br</li>
+          <li>Tel: 0800 772 2300</li>
+          <li><a href="https://www.conformidade.com.br/canaldiretoMarista">Compliance</a></li>
+          <li><a href="https://ftd.com.br/imprensa/apresentacao">Imprensa</a></li>
+          <li><a href="https://jobs.kenoby.com/vempraftd">Trabalhe na FTD</a></li>
       </ul>        
-    </div>
+    </nav>
   </footer>
+  </div>
   <script src="/js/index.js"></script>
 </body>
 </html>
